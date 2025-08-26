@@ -1,12 +1,33 @@
-# React + Vite
+Task Instructions:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+First, you will be given this task to assess your coding skills and code quality.
 
-Currently, two official plugins are available:
+Based on this task, you will be shortlisted for the next round, which will be a live coding session in a Google Meet call.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Task Description:
 
-## Expanding the ESLint configuration
+You will create a password-protected entry UI for lab members.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Only one user account is required (hardcoded in code).
+
+User is allocated a fixed time (e.g., 10 mins).
+
+If the correct password is entered → show an animation (rotating & fading center lock + sliding doors effect).
+
+If the wrong password is entered → show an error message.
+
+Inside the lab: show remaining time and an exit button.
+
+If the user exits, they should return to the password entry page with their remaining time.
+
+If the time is exhausted, automatically exit and restrict login with an error message.
+
+👉 Important:
+
+Code quality will be judged carefully.
+
+This is expected to take a couple of hours, but you have 24 hours to submit your solution.
+
+Create a GitHub repo, push your code, and share the repo link.
+
+Please also go through the attached WhatsApp video for better clarity.
