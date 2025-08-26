@@ -54,7 +54,7 @@ export default function MazeDashboard() {
 
   return (
     <>
-      <div className="min-h-screen bg-black text-white flex flex-col md:flex-row  " >
+      <div className="min-h-screen bg-black text-white flex flex-col md:flex-row h-full " >
         {/* Sidebar / Topbar */}
         <div className="w-full md:w-1/4 p-4 md:p-6 border-b md:border-b-0 md:border-r border-cyan-400 flex flex-col md:items-between justify-around space-y-4 md:space-y-8 ">
           <select className="bg-black border border-cyan-400 text-cyan-400 p-2 rounded w-full md:w-auto">
@@ -113,6 +113,7 @@ export default function MazeDashboard() {
             {techGrid.map((row, rowIndex) =>
               row.map((tech, colIndex) => {
                 const isPacman = pacmanPos.row === rowIndex && pacmanPos.col === colIndex;
+                
 
 
                 return (
