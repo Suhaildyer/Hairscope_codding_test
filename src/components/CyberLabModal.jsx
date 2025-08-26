@@ -71,15 +71,15 @@ export default function CyberLabModal({ showMaze, setShowMaze }) {
       <AnimatePresence>
         {showMaze && (
           <motion.div
-            className="fixed inset-0 flex items-center justify-center backdrop-blur-lg z-50 p-4 border-2 border-cyan-400"
+            className="fixed inset-0 flex items-center justify-center backdrop-blur-2xl z-50 p-4  "
             variants={backdropVariants}
             initial="enter"
             animate={backdropControls}
           >
-            <div className="relative w-full max-w-6xl flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-0">
+            <div className="relative w-full max-w-6xl flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-0 border-2 border-cyan-400 p-4 md:p-6 rounded-lg  mx-auto">
               {/* Close Button */}
               <button
-                className="absolute top-4 right-6 text-2xl font-bold hover:text-white"
+                className="absolute  right-9 text-2xl font-bold hover:text-white "
                 aria-label="Close modal"
                 onClick={() => setShowMaze(false)}
               >
@@ -88,7 +88,7 @@ export default function CyberLabModal({ showMaze, setShowMaze }) {
 
               {/* LEFT SECTION */}
               <motion.div
-                className="w-full md:w-1/3 flex flex-col justify-center text-center md:text-left"
+                className="w-full md:w-1/3 flex flex-col justify-center text-center md:text-left border-2 border-cyan-400 p-4 md:p-6 rounded-lg  mx-auto "
                 variants={leftVariants}
                 initial="enter"
                 animate={leftControls}
@@ -136,7 +136,7 @@ export default function CyberLabModal({ showMaze, setShowMaze }) {
 
               {/* CENTER CIRCLE MODAL */}
               <motion.div
-                className="w-64 h-64 sm:w-72 sm:h-72 md:w-[300px] md:h-[300px] rounded-full border-4 border-cyan-400 flex flex-col items-center justify-center text-center relative shadow-[0_0_20px_#00ffff] mx-auto"
+                className="w-70 h-70 sm:w-72 sm:h-72 md:w-[300px] md:h-[300px] rounded-full border-4 border-cyan-400 flex flex-col items-center justify-center text-center relative shadow-[0_0_20px_#00ffff] mx-auto md:mt-10"
                 variants={centerVariants}
                 initial="enter"
                 animate={centerControls}
@@ -172,26 +172,26 @@ export default function CyberLabModal({ showMaze, setShowMaze }) {
 
               {/* RIGHT SECTION */}
               <motion.div
-                className="w-full md:w-1/3 flex flex-col justify-center items-center md:items-start md:mt-10"
+                className="w-full h-[80%]  md:w-1/3 flex flex-col justify-center items-center md:items-start md:mt-10 border-2 border-cyan-400 p-8 md:p-6 rounded-lg  mx-auto "
                 variants={rightVariants}
                 initial="enter"
                 animate={rightControls}
               >
-                <div className="space-y-4 w-full max-w-xs">
-                  <div className="h-4 bg-gray-800 rounded">
-                    <div className="h-4 bg-cyan-400 w-4/5"></div>
+                <div className="space-y-8 w-full max-w-xs">
+                  <div className="h-8 bg-gray-800 rounded">
+                    <div className="h-8 bg-cyan-400 w-4/5"></div>
                   </div>
-                  <div className="h-4 bg-gray-800 rounded">
-                    <div className="h-4 bg-cyan-400 w-3/5"></div>
+                  <div className="h-8 bg-gray-800 rounded">
+                    <div className="h-8 bg-cyan-400 w-3/5"></div>
                   </div>
-                  <div className="h-4 bg-gray-800 rounded">
-                    <div className="h-4 bg-cyan-400 w-1/3"></div>
+                  <div className="h-8 bg-gray-800 rounded">
+                    <div className="h-8 bg-cyan-400 w-1/3"></div>
                   </div>
-                  <div className="h-4 bg-gray-800 rounded">
-                    <div className="h-4 bg-cyan-400 w-1/4"></div>
+                  <div className="h-8 bg-gray-800 rounded">
+                    <div className="h-8 bg-cyan-400 w-1/4"></div>
                   </div>
                 </div>
-                <p className="mt-6 text-xl sm:text-2xl font-bold text-cyan-400">50 mins left</p>
+                <p className="mt-8 mb-8 text-xl sm:text-2xl font-bold text-cyan-400">50 mins left</p>
                 <p className="text-gray-500 text-xs sm:text-sm">out of 60 Min</p>
               </motion.div>
             </div>
